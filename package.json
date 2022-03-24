@@ -1,0 +1,24 @@
+{
+  "name": "cypressudemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "node_modules\\.bin\\cypress open",
+    "test": "node_modules\\.bin\\cypress run",
+    "headed": "npm run test npm run -- --headed",
+    "chrome": "npm run test -- --browser chrome",
+    "recordDashboardTest": "npm run test -- --record --key 9d82a81c-73c0-4c3b-8de4-c59a58abb44f --reporter mochawesome",
+    "GreenKartTest": "npm run test -- --spec \"cypress/integration/GreenKartTests/*\"",
+    "GreenKartTest2": "npm run test -- --spec 'cypress\\integration\\GreenKartTests/*'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.3.1",
+    "cypress-iframe": "^1.0.1",
+    
+    "mocha": "^9.2.0",
+    "mochawesome": "^7.0.1"
+  }
+}
